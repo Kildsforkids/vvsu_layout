@@ -5,7 +5,7 @@ public class Floors : MonoBehaviour
 {
     private List<GameObject[]> floors = new List<GameObject[]>();
 
-    private int currentFloorIndex = 0;
+    private int currentFloorIndex = 1;
 
     private void Start()
     {
@@ -13,6 +13,14 @@ public class Floors : MonoBehaviour
         floors.Add(GameObject.FindGameObjectsWithTag("floor6"));
         floors.Add(GameObject.FindGameObjectsWithTag("floor5"));
         floors.Add(GameObject.FindGameObjectsWithTag("floor4"));
+
+        foreach (var floor in floors)
+        {
+            foreach (var element in floor)
+            {
+                element.SetActive(false);
+            }
+        }
     }
     public void SetActiveNextFloor(bool up)
     {
@@ -42,11 +50,15 @@ public class Floors : MonoBehaviour
                 }
                 foreach (var element in floors[++currentFloorIndex])
                 {
-                    element.SetActive(false);
+                    element.SetActive(true);
                 }
                 //floors[currentFloorIndex].SetActive(false);
                 // floors[++currentFloorIndex].SetActive(true);
             }
         }
+    }
+    public void Set_Bool()   
+    {
+        currentFloorIndex = 1;
     }
 }

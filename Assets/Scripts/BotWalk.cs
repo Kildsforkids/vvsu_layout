@@ -6,7 +6,7 @@ public class BotWalk : MonoBehaviour
     [SerializeField]
     private List<GameObject> floor = new List<GameObject>();
     Vector3 _targetPoint;
-    private float _speed = 1.0f;
+    private float _speed = 3f;
     private int i = 0;
     const double PI = 3.14159265;
 
@@ -41,7 +41,7 @@ public class BotWalk : MonoBehaviour
 
     void MoveObj()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _targetPoint, _speed);
+        transform.position = Vector3.MoveTowards(transform.position, _targetPoint, _speed*Time.fixedDeltaTime);
               //Двигаем объект с помощью метода MoveTowards, в скобках слева на право 1. Текущее положение, 2. Точка назначения, 3. скорость
 
     }

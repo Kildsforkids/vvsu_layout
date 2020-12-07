@@ -240,7 +240,7 @@ public class Test_script : MonoBehaviour
                 {
                    
                     agent.speed = walk_speed;
-                    agent.SetDestination(aim_point.transform.position);
+                    //agent.SetDestination(aim_point.transform.position);
                     ani.SetInteger("arms", 1);
                     ani.SetInteger("legs", 1);
                 }
@@ -263,7 +263,7 @@ public class Test_script : MonoBehaviour
                 {
                     Debug.Log("going to run");
                     agent.speed = run_speed;
-                    agent.SetDestination(aim_point.transform.position);
+                    //agent.SetDestination(aim_point.transform.position);
                     ani.SetInteger("arms", 2);
                     ani.SetInteger("legs", 2);
                 }
@@ -286,7 +286,7 @@ public class Test_script : MonoBehaviour
                 {
                     
                     agent.speed = walk_speed;
-                    agent.SetDestination(aim_point.transform.position);
+                    //agent.SetDestination(aim_point.transform.position);
                     ani.SetInteger("arms", 1);
                     ani.SetInteger("legs", 1);
                 }
@@ -313,7 +313,7 @@ public class Test_script : MonoBehaviour
                 {
                  
                     agent.speed = walk_speed;
-                    agent.SetDestination(aim_point.transform.position);
+                    //agent.SetDestination(aim_point.transform.position);
                     ani.SetInteger("arms", 1);
                     ani.SetInteger("legs", 1);
                 }
@@ -341,7 +341,7 @@ public class Test_script : MonoBehaviour
                 {
                     
                     agent.speed = walk_speed;
-                    agent.SetDestination(aim_point.transform.position);
+                    //agent.SetDestination(aim_point.transform.position);
                     ani.SetInteger("arms", 1);
                     ani.SetInteger("legs", 1);
                 }
