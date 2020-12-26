@@ -5,10 +5,11 @@ public class Floors : MonoBehaviour
 {
     private List<GameObject[]> floors = new List<GameObject[]>();
 
-    private int currentFloorIndex = 1;
+    private int currentFloorIndex = 2;
 
     private void Start()
     {
+        floors.Add(GameObject.FindGameObjectsWithTag("floor8"));
         floors.Add(GameObject.FindGameObjectsWithTag("floor7"));
         floors.Add(GameObject.FindGameObjectsWithTag("floor6"));
         floors.Add(GameObject.FindGameObjectsWithTag("floor5"));
@@ -59,6 +60,6 @@ public class Floors : MonoBehaviour
     }
     public void Set_Bool()   
     {
-        currentFloorIndex = 1;
+        currentFloorIndex = 2;
     }
 }

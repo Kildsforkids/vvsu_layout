@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="VGUES111.Front" size="0.800000 1.000000"/>
+        <ImageTarget name="VGUES111.Top" size="0.800000 4.000000"/>
+        <ImageTarget name="VGUES111.Right" size="4.000000 1.000000"/>
+        <ImageTarget name="VGUES111.Bottom" size="0.800000 4.000000"/>
+        <ImageTarget name="VGUES111.Back" size="0.800000 1.000000"/>
+        <ImageTarget name="VGUES111.Left" size="4.000000 1.000000"/>
+        <MultiTarget name="VGUES111">
+            <Part name="VGUES111.Left" translation="-0.4000000059604645 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="VGUES111.Right" translation="0.4000000059604645 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="VGUES111.Front" translation="0 0 2.0" rotation="AD: 1 0 0 0"/>
+            <Part name="VGUES111.Back" translation="0 0 -2.0" rotation="AD: 0 1 0 180"/>
+            <Part name="VGUES111.Top" translation="0 0.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="VGUES111.Bottom" translation="0 -0.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

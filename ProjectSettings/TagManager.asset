@@ -12,6 +12,7 @@ TagManager:
   - floor6
   - floor5
   - floor4
+  - floor8
   layers:
   - Default
   - TransparentFX
