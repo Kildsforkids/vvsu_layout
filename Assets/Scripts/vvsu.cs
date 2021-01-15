@@ -2,8 +2,8 @@
 
 public class vvsu : MonoBehaviour
 {
-   private void OnMouseDown()
+    private void OnMouseDown()
     {
-        Application.OpenURL("http://vvsu.ru/");
+        Application.OpenURL("http://vvsu.ru/");   
     }
 }
