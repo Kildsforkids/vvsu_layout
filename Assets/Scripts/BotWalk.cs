@@ -41,6 +41,7 @@ public class BotWalk : MonoBehaviour
 
     void MoveObj()
     {
+        _targetPoint = floor[i].transform.position;
         transform.position = Vector3.MoveTowards(transform.position, _targetPoint, _speed*Time.fixedDeltaTime);
               //Двигаем объект с помощью метода MoveTowards, в скобках слева на право 1. Текущее положение, 2. Точка назначения, 3. скорость
 
