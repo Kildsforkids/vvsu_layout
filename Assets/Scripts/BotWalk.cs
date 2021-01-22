@@ -6,7 +6,7 @@ public class BotWalk : MonoBehaviour
     [SerializeField]
     private List<GameObject> floor = new List<GameObject>();
     Vector3 _targetPoint;
-    private float _speed = 3f;
+    private float _speed=0.3f;
     private int i = 0;
     const double PI = 3.14159265;
 
