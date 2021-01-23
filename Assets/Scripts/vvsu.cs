@@ -7,7 +7,7 @@ public class vvsu : MonoBehaviour
     // Update is called once per frame
     private void OnMouseDown()
     {
-        if (_window.activeInHierarchy==false)
+        if (!_window.activeInHierarchy)
             Application.OpenURL("http://vvsu.ru/");
         
     }
